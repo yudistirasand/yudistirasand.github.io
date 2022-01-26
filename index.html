@@ -1,0 +1,50 @@
+<html>
+<title>Webhosting</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div class="w3-container">
+ <img src="baner.jpg" >
+</div>
+<div class="w3-bar w3-black">
+ <button class="w3-bar-item w3-button" onclick="openTeam('Profile')">PROFILE</button>
+ <button class="w3-bar-item w3-button" onclick="openTeam('Rrq')">RRQ</button>
+ <button class="w3-bar-item w3-button" onclick="openTeam('Evos')">EVOS</button>
+ <button class="w3-bar-item w3-button" onclick="openTeam('Ae')">AE</button>
+ <button class="w3-bar-item w3-button" onclick="openTeam('Onic')">ONIC</button>
+</div>
+<div id="Profile" class="w3-container team" style="display:none">
+ <h2>PROFILE</h2>
+ <p>10121150</p>
+ <p>YUDISTIRA SANDRIANSYAH</p>
+ <p>IF-4</p>
+ <img class="w3-animate-fading" src="saya.jpg" style="width:40%">
+</div>
+<div id="Rrq" class="w3-container team" style="display:none">
+ <h2>RRQ</h2>
+ <img class="w3-animate-fading" src="rrq.jpg" style="width:40%">
+</div>
+<div id="Evos" class="w3-container w3-animate-bottom team" style="display:none">
+ <h2>EVOS</h2>
+ <img src="evos.jpeg"  style="width:40%">
+</div>
+<div id="Ae" class="w3-container w3-animate-top team" style="display:none">
+ <h2>AE</h2>
+ <img src="alterego.jpg"  style="width:40%">
+</div>
+<div id="Onic" class="w3-container w3-animate-zoom team" style="display:none">
+ <h2>ONIC</h2>
+ <img src="onic.png"  style="width:40%">
+</div>
+<script>
+function openTeam(namaTeam) {
+ var i;
+ var x = document.getElementsByClassName("team");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namaTeam).style.display = "block";
+}
+</script>
+</body>
+</html>
